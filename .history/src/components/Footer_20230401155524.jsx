@@ -7,9 +7,7 @@ export default function Footer() {
         <div>
           <CountryLookup />  
         </div>
-        <div>
-            
-        </div>
+        div
 
 
     </footer>
