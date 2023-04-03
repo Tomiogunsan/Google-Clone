@@ -10,7 +10,7 @@ export default function SearchLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <SearchHeader />
+        
         {children}
         {/* footer */}
        
