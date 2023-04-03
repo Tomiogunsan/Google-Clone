@@ -18,7 +18,7 @@ export default function SearchBox() {
   function handleSubmit(e){
     e.preventDefault();
     if(!term.trim())return;
-    router.push(`/search/web?searchTerm=${term}`)
+    router.push(`/search/web?searchTerm=$`)
 
   }
 
@@ -35,7 +35,7 @@ export default function SearchBox() {
       className='text-2xl text-gray-500 cursor-pointer sm:mr-2'/>
       <BsFillMicFill className='hidden sm:inline-flex text-4xl text-blue-500 pl-4 border-l-2 border-gray-300 mr-3 '/>
       <AiOutlineSearch 
-      onClick={handleSubmit}
+      
       className='text-2xl hidden sm:inline-flex text-blue-500 cursor-pointer '/>
     </form>
   )
