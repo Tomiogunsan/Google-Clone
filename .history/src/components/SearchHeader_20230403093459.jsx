@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import SearchBox from './SearchBox'
 
 export default function SearchHeader() {
   return (
@@ -12,12 +11,9 @@ export default function SearchHeader() {
                 width='120'
                 height='40'
                 src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png'
-                alt='google image'
+                alt=''
                 />
             </Link>
-            <div>
-                <SearchBox />
-            </div>
         </div>
     </header>
   )

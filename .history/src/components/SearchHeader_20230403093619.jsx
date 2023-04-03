@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import SearchBox from './SearchBox'
 
 export default function SearchHeader() {
   return (
