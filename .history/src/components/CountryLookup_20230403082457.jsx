@@ -4,11 +4,9 @@ import React, { useEffect, useState } from 'react'
 
 export default function CountryLookup() {
   const [country, setCountry] = useState('Nigeria')
-  // useEffect(()=> {
-  //   fetch(`http://extreme-ip-lookup.com/json/?key=${process.env.NEXT_PUBLIC_IP_API_KEY}`)
-  //   .then((res) => res.json())
-  //    .then((data) => console.log(data) )
-  // }, [])
+  useEffect(()=> {
+    fetch(`http://ip-api.com/json/197.210.53.96`).then((res) => res.json).then((data) => setCountry(data.country) )
+  }, [data])
   
   return (
     <div>{country}</div>
