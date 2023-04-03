@@ -1,5 +1,5 @@
 import SearchHeader from "@/components/SearchHeader"
-import './../globals.css';
+import './../global.css'
 
 
 export const metadata = {
@@ -10,12 +10,12 @@ export const metadata = {
 export default function SearchLayout({ children }) {
   return (
     
-      <div>
+      <body>
         <SearchHeader />
         {children}
         {/* footer */}
        
-        </div>
+        </body>
     
   )
 }

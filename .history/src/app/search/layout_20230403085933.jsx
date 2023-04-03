@@ -1,5 +1,5 @@
 import SearchHeader from "@/components/SearchHeader"
-import './../globals.css';
+import './../globals.css'
 
 
 export const metadata = {
