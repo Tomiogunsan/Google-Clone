@@ -9,7 +9,7 @@ export default function SearchHeaderOptions() {
   const pathname = usePathname();
   const router = useRouter();
 function selectTab(tab){
-router.push(`/search/${tab === 'Images' ? 'image' : 'web'}`);
+router.push(`/search/${tab.toLower}`)
 }
 
   return (

@@ -3,14 +3,11 @@
 import React from 'react'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { usePathname } from 'next/navigation'
-import { useRouter } from 'next/router';
 
 export default function SearchHeaderOptions() {
   const pathname = usePathname();
-  const router = useRouter();
-function selectTab(tab){
-router.push(`/search/${tab === 'Images' ? 'image' : 'web'}`);
-}
+
+function selectTab
 
   return (
     <div>

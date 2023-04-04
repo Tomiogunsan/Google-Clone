@@ -7,9 +7,9 @@ import { useRouter } from 'next/router';
 
 export default function SearchHeaderOptions() {
   const pathname = usePathname();
-  const router = useRouter();
+  const router = useRouter
 function selectTab(tab){
-router.push(`/search/${tab === 'Images' ? 'image' : 'web'}`);
+
 }
 
   return (
