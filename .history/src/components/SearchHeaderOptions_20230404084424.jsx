@@ -2,10 +2,8 @@
 
 import React from 'react'
 import { AiOutlineSearch } from 'react-icons/ai'
-import { usePathname } from 'next/navigation'
-
+import {use}
 export default function SearchHeaderOptions() {
-  const pathname = usePathname();
   return (
     <div>
       <div className='flex items-center space-x-1 border-b-4 border-transparemnt active:text-blue-500
