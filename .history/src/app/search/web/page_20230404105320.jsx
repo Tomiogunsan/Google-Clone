@@ -12,11 +12,7 @@ export default async function WebSearchPage({searchParams}) {
    if(!results){
     return <div>
       <h1>No results found</h1>
-      <p>Try searching for something else or go back to homepage. 
-        <Link href={}>
-          HOME
-        </Link>
-         </p>
+      <p>Try searching for something else or go back to homepage.  </p>
       </div>
    }
   return (

@@ -14,7 +14,7 @@ export default async function WebSearchPage({searchParams}) {
       <h1>No results found</h1>
       <p>Try searching for something else or go back to homepage. 
         <Link href={}>
-          HOME
+          H
         </Link>
          </p>
       </div>
