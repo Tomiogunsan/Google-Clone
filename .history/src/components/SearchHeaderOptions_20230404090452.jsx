@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { AiOutlineCamera, AiOutlineSearch } from 'react-icons/ai'
+import { AiOutlineSearch } from 'react-icons/ai'
 import { usePathname, useSearchParams } from 'next/navigation'
 import { useRouter } from 'next/navigation';
 
@@ -28,7 +28,7 @@ router.push(`/search/${tab === 'Images' ?
       onClick={()=> selectTab('Images')}
       className={`flex items-center space-x-1 border-b-4 border-transparemnt active:text-blue-500
        cursor-pointer pb-3 px-2  ${pathname === '/search/image' && '!text-blue-600 !border-blue-600'}`}>
-        <AiOutlineCamera className='text-md '/>
+        <AiOutlineSearch className='text-md '/>
         <p>Images</p>
       </div>
     </div>
