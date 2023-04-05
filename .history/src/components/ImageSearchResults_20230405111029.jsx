@@ -11,15 +11,15 @@ export default function ImageSearchResults({results}) {
                 <div className='group'>
                     <Link href={result.image.contextLink}>
                         <img 
-                        className='h-60 group-hover:shadow-xl w-full object-contain transition-shadow'
+                        cl
                         src={result.link} 
                         alt={result.title} />
                     </Link>
                     <Link href={result.image.contextLink}>
-                       <h2 className='group-hover:underline truncate text-xl'>{result.title}</h2>
+                       <h2>{result.title}</h2>
                     </Link>
                     <Link href={result.image.contextLink}>
-                        <p className='group-hover:underline text-gray-600'>{result.displayLink}</p>
+                        {result.displayLink}
                     </Link>
                 </div>
             </div>

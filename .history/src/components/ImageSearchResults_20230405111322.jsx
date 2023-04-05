@@ -19,7 +19,7 @@ export default function ImageSearchResults({results}) {
                        <h2 className='group-hover:underline truncate text-xl'>{result.title}</h2>
                     </Link>
                     <Link href={result.image.contextLink}>
-                        <p className='group-hover:underline text-gray-600'>{result.displayLink}</p>
+                        <p></p>
                     </Link>
                 </div>
             </div>
