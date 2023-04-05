@@ -1,10 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
-import ImageSearchResults from '@/components/ImageSearchResults';
 
 export default async function ImageSearchPage() {
-  // await new Promise((resolve) => setTimeout(resolve, 10000));
-    const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image`) 
+  await new Promise((resolve) => setTimeout(resolve, 10000));
+    const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType`) 
     // if(!response.ok){
     //   throw new Error('Something went wrong');
     // }
@@ -25,7 +24,7 @@ export default async function ImageSearchPage() {
      }
     return (
       <>
-      {results && <ImageSearchResults results={data}/>}
+      {results && <WebSearchResults results={data}/>}
       </>
     )
   }
