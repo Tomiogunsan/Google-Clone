@@ -11,17 +11,17 @@ export default function WebSearchResults({results}) {
         </p>
         {results.items?.map((result) => (
             <div key={result.link} className='mb-8 max-w-xl'>
-               <div className='group'>
-                <Link href={result.link} className='text-sm truncate'>
+               <div cl>
+                <Link href={result.link}>
                     {result.formattedUrl}
                 </Link>
-                <Link href={result.link} className='group-hover:underline decoration-blue-800 text-xl truncate font-medium text-blue-800'>
+                <Link href={result.link}>
                     {result.title}
                 </Link>
 
                 
                 </div>   
-                 <p className=''>{Parser(result.htmlSnippet)}</p>
+                 <p>{Parser(result.htmlSnippet)}</p>
 
             </div>
         ))}
