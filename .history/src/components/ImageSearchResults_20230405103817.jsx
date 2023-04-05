@@ -4,18 +4,16 @@ import React from 'react'
 export default function ImageSearchResults({results}) {
   return (
     <div className=''>
-        hi
-        {/* {results.items.map((result) => (
+        {results.items.map((result) => (
             <div key={result.link}>
                 <div className='group'>
                     <Link href={result.image.contextLink}>
-                        <img 
-                        src={result.link} 
-                        alt={result.title} />
+                        <img src="" 
+                        alt="" />
                     </Link>
                 </div>
             </div>
-        ))} */}
+        ))}
     </div>
   )
 }
