@@ -1,4 +1,3 @@
-import WebSearchResults from '@/components/WebSearchResults'
 import Link from 'next/link'
 import React from 'react'
 
@@ -24,7 +23,7 @@ export default async function WebSearchPage({searchParams}) {
    }
   return (
     <>
-    {results && <WebSearchResults results={data}/>}
+    {results && <Web}
     </>
   )
 }
