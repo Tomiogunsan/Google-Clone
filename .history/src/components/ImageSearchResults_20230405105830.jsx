@@ -13,12 +13,6 @@ export default function ImageSearchResults({results}) {
                         src={result.link} 
                         alt={result.title} />
                     </Link>
-                    <Link href={result.image.contextLink}>
-                       <h2>{result.title}</h2>
-                    </Link>
-                    <Link href={result.image.contextLink}>
-                        {result.displayLink}
-                    </Link>
                 </div>
             </div>
         ))}

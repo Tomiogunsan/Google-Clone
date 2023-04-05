@@ -17,7 +17,7 @@ export default function ImageSearchResults({results}) {
                        <h2>{result.title}</h2>
                     </Link>
                     <Link href={result.image.contextLink}>
-                        {result.displayLink}
+                        {re}
                     </Link>
                 </div>
             </div>
