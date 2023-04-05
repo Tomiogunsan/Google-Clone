@@ -21,7 +21,7 @@ export default function WebSearchResults({results}) {
 
                 
                 </div>   
-                 <p>{Parser(result.htmlSnippet)}</p>
+                 <p>{Parser(result.htmlSnippet}</p>
 
             </div>
         ))}

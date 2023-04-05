@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import Parser from 'html-react-parser'
+import Pasr
 
 export default function WebSearchResults({results}) {
   return (
@@ -21,7 +21,7 @@ export default function WebSearchResults({results}) {
 
                 
                 </div>   
-                 <p>{Parser(result.htmlSnippet)}</p>
+                 <p>{result.htmlSnippet}</p>
 
             </div>
         ))}
