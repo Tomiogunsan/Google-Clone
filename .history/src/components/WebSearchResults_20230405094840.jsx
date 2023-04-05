@@ -14,13 +14,11 @@ export default function WebSearchResults({results}) {
                 <Link href={result.link}>
                     {result.formattedUrl}
                 </Link>
-                <Link href={result.link}>
-                    {result.title}
-                </Link>
-
+                <Link>
                 
-                </div>   
-                 
+                </Link>
+                
+                </div>    
 
             </div>
         ))}

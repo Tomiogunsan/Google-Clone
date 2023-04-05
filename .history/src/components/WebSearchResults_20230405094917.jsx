@@ -17,10 +17,9 @@ export default function WebSearchResults({results}) {
                 <Link href={result.link}>
                     {result.title}
                 </Link>
-
                 
-                </div>   
-                 
+                
+                </div>    
 
             </div>
         ))}

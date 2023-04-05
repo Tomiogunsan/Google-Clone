@@ -15,12 +15,10 @@ export default function WebSearchResults({results}) {
                     {result.formattedUrl}
                 </Link>
                 <Link href={result.link}>
-                    {result.title}
+                    {}
                 </Link>
-
                 
-                </div>   
-                 
+                </div>    
 
             </div>
         ))}

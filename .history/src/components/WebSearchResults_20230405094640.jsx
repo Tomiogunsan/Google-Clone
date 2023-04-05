@@ -11,16 +11,11 @@ export default function WebSearchResults({results}) {
         {results.items?.map((result) => (
             <div key={result.link}>
                <div>
-                <Link href={result.link}>
-                    {result.formattedUrl}
-                </Link>
-                <Link href={result.link}>
-                    {result.title}
-                </Link>
-
+                <Link href={}>
                 
-                </div>   
-                 
+                </Link>
+                
+                </div>    
 
             </div>
         ))}
