@@ -26,7 +26,7 @@ export default function ImageSearchResults({results}) {
             </div>
         ))}
     </div>
-    <div className='ml-16'>
+    <div className=''>
         <PaginationsButton />
     </div>
     </div>
