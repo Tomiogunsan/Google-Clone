@@ -1,4 +1,4 @@
-export const dynamic = 'force-dynamic';
+
 
 import React from 'react'
 import Link from 'next/link'
@@ -12,7 +12,7 @@ export default async function ImageSearchPage({searchParams}) {
     //   throw new Error('Something went wrong');
     // }
     const data = await response.json()
-    
+    console.log(data)
      const results = data.items
   
      if(!results){

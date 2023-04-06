@@ -1,4 +1,4 @@
-
+export const dynamic = 'force-dynam'
 
 import Link from 'next/link'
 import React from 'react'

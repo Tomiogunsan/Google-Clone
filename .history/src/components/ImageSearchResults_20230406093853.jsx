@@ -1,4 +1,4 @@
-
+export const dynamic = ''
 
 import Link from 'next/link'
 import React from 'react'
