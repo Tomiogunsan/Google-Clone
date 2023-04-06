@@ -16,7 +16,6 @@ export default function PaginationsButton() {
     <div>
         {startIndex >= 10 && (
             <Link>
-            
             </Link>
         )}
     </div>

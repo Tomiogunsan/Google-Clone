@@ -4,7 +4,6 @@ import { usePathname, useSearchParams } from 'next/navigation'
 import {BsChevronRight} from 'react-icons/bs'
 import {BsChevronLeft} from 'react-icons/bs'
 import React from 'react'
-import Link from 'next/link'
 
 export default function PaginationsButton() {
     const pathname = usePathname();
@@ -14,11 +13,7 @@ export default function PaginationsButton() {
   
     return (
     <div>
-        {startIndex >= 10 && (
-            <Link>
-            
-            </Link>
-        )}
+        {startIndex >= 10 && }
     </div>
   )
 }
