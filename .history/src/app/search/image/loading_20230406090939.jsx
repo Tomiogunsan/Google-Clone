@@ -8,19 +8,16 @@ export default function loading() {
         <div className='h-2 w-48 mb-2.5 bg-200 rounded-md'></div>
         <div className='h-2 w-44 mb-2.5 bg-200 rounded-md'></div>
       </div>
-      <div className='hidden sm:inline-flex sm:space-x-4'>
-      <div className='animate-pulse '>
+      <div className='animate-pulse hidden sm:'>
         <div className='h-48 w-48 mb-4 bg-200 rounded-md'></div>
         <div className='h-2 w-48 mb-2.5 bg-200 rounded-md'></div>
         <div className='h-2 w-44 mb-2.5 bg-200 rounded-md'></div>
       </div>
-      <div className='animate-pulse '>
+      <div className='animate-pulse'>
         <div className='h-48 w-48 mb-4 bg-200 rounded-md'></div>
         <div className='h-2 w-48 mb-2.5 bg-200 rounded-md'></div>
         <div className='h-2 w-44 mb-2.5 bg-200 rounded-md'></div>
       </div>
-      </div>
-      
     </div>
   )
 }
