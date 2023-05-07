@@ -17,15 +17,14 @@ function handleSubmit(e){
 
 }
 
-   async function randomSearch() {
-     setRandomSearchLoading(true);
-     const response = await fetch("https://random-word-api.herokuapp.com/word")
-       .then((res) => res.json())
-       .then((data) => data[0]);
-     if (!response) return;
-     router.push(`/search/web?searchTerm=${response}`);
-     setRandomSearchLoading(false);
-   }
+   async function randomSearch(){
+    setRandomSearchLoading(true)
+        const response = await fetch('https://random-word-api.herokuapp.com/word')
+        .then((res) => res.json()).then((data) => data[0]);
+        if(!response)return;
+        router.push(`/search/web?searchTerm=${response}`)
+        setRandomSearchLoading(false);
+    }
   return (
     <>
     <form 
