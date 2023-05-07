@@ -9,13 +9,13 @@ export default function HomeSearch() {
     const router = useRouter();
 const[input , setInput] = useState('');
 const[randomSearchLoading, setRandomSearchLoading] = useState(false)
-    function handleSubmit(e){
-        e.preventDefault();
-        if(!input.trim())return;
-        router.push(`/search/web?serachTerm=${input}`)
+function handleSubmit(e){
+  e.preventDefault();
+  if(!input.trim())return;
+  router.push(`/search/web?serachTerm=${input}`)
 
 
-    }
+}
 
    async function randomSearch(){
     setRandomSearchLoading(true)
@@ -47,8 +47,8 @@ const[randomSearchLoading, setRandomSearchLoading] = useState(false)
         className='btn'>Google Search</button>
         <button 
         onClick={randomSearch}
-        
-        className='btn flex items-center justify-center'>
+        disabled={randomSearchLoading}
+        className='btn flex items-center justify-center disabled:opacity-80'>
           {randomSearchLoading ? (< img src='spinner.svg' 
           alt='loading...' className='h-6 text-center '/>) : 'I Am Feeling Lucky'}  
             </button>
