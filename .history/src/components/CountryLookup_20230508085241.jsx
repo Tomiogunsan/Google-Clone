@@ -10,6 +10,5 @@ export default function CountryLookup() {
   //    .then((data) => console.log(data) )
   // }, [])
   
-  return <div>{country}</div>;
 }
 
